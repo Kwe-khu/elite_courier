@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1042091234912",
+    "project_id": "elite-courier-1ab94",
+    "storage_bucket": "elite-courier-1ab94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1042091234912:android:0b84b92fe495e43b631505",
+        "android_client_info": {
+          "package_name": "com.example.elite_courier"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1042091234912-h4jna9bb26gmge0j3l1rnpntas5v7tal.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoQoxIomcGdu7xE7RT0hwsTJkVaUHRcME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1042091234912-h4jna9bb26gmge0j3l1rnpntas5v7tal.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
