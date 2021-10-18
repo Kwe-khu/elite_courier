@@ -1,3 +1,5 @@
+import 'package:elite_courier/authentication/auth_toggle.dart';
+import 'package:elite_courier/authentication/login.dart';
 import 'package:elite_courier/home/dashboard.dart';
 import 'package:elite_courier/home/settings.dart';
 import 'package:elite_courier/home/my_drawer_header.dart';
@@ -56,6 +58,14 @@ class _HomePageState extends State<HomePage> {
               currentPage == DrawerSections.notifications ? true : false),
           menuItem(3, "Settings", Icons.settings,
               currentPage == DrawerSections.settings ? true : false),
+          GestureDetector(
+            onTap: () {
+              Navigator.of(context)
+                  .push(MaterialPageRoute(builder: (con) => Authentication()));
+            },
+            child: menuItem(4, "Logout", Icons.logout,
+                currentPage == DrawerSections.settings ? true : false),
+          ),
         ],
       ),
     );
