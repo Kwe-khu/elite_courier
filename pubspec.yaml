@@ -51,7 +51,10 @@ flutter:
     - assets/images/large.jpeg
     - assets/images/mini.jpeg
     - assets/package_big.jpg
-    - assets/package_small.jpg
+    - assets/images/mtn_momo.png
+    - assets/images/tigo_logo.webp
+    - assets/images/voda_cash.jpeg
+    - assets/images/pay.png
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 

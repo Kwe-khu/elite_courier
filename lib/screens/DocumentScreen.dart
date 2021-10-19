@@ -1,3 +1,4 @@
+import 'package:elite_courier/screens/PaymentOptions.dart';
 import 'package:flutter/material.dart';
 
 class DocumentPage extends StatefulWidget {
@@ -93,7 +94,9 @@ class _DocumentPageState extends State<DocumentPage> {
                   icon: Icon(Icons.arrow_drop_down, color: Colors.red),
                   isExpanded: true,
                   items: locations.map(buildMenuItem).toList(),
-                  onChanged: (value) => setState(() => this.value = value),
+                  onChanged: (value) => setState(() {
+                    locationVal = value;
+                  }),
                 ),
               ),
             ),
@@ -201,9 +204,12 @@ class _DocumentPageState extends State<DocumentPage> {
               child: SizedBox(
                 width: 250,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (con) => PaymentOptions()));
+                  },
                   child: Text(
-                    "Select destination on map",
+                    "Proceed To payment",
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   style: ElevatedButton.styleFrom(

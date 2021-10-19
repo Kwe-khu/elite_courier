@@ -1,3 +1,4 @@
+import 'package:elite_courier/screens/PaymentOptions.dart';
 import 'package:flutter/material.dart';
 
 class PackagePage extends StatefulWidget {
@@ -38,7 +39,7 @@ class _PackagePageState extends State<PackagePage> {
   String? locationVal = 'Accra';
   @override
   Widget build(BuildContext context) => Scaffold(
-        appBar: AppBar(title: Text('Documents'), centerTitle: true),
+        appBar: AppBar(title: Text('Package'), centerTitle: true),
         body: Column(
           children: [
             Column(
@@ -216,10 +217,10 @@ class _PackagePageState extends State<PackagePage> {
                 child: ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).push(
-                        MaterialPageRoute(builder: (con) => PackagePage()));
+                        MaterialPageRoute(builder: (con) => PaymentOptions()));
                   },
                   child: Text(
-                    "Select destination on map",
+                    "Proceed To payment",
                     style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
                   ),
                   style: ElevatedButton.styleFrom(
